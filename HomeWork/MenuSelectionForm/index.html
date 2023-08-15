@@ -9,12 +9,31 @@
             .block {
                 display: block;
             }
+            .title-sm {
+                font-weight: bold;
+                font-size: larger;
+                display: block;
+            }
+
+            .flex {
+                display: flex;
+                flex-direction: column;
+                padding: 0.4rem 0;
+                margin: 2px;
+            }
+            fieldset {
+                margin: 1.3rem 0;
+            }
+
+            .mg-b {
+                margin-bottom: 1rem;
+            }
         </style>
     </head>
     <body>
         <form action="" method="post" target="_blank" autocomplete="on">
             <h1>Dado Tea Lunch Special</h1>
-            <div>
+            <div class="flex">
                 <p>Monday through Friday</p>
                 <p>11am - 3pm</p>
                 <p>$9.95 plus tax</p>
@@ -24,14 +43,14 @@
 
             <fieldset>
                 <legend>Order Information</legend>
-                <div>
-                    <label for="name">Name</label>
+                <div class="mg-b">
+                    <label for="name" class="title-sm">Name</label>
                     <input id="name" type="text" />
                 </div>
 
                 <div>
                     <input type="radio" id="here" name="choice" value="here" />
-                    <label for="here">Here</label>
+                    <label for="here">Here</label> <br />
 
                     <input type="radio" id="togo" name="choice" value="togo" />
                     <label for="togo">To Go</label>
@@ -49,7 +68,7 @@
                         name="monday"
                         value="Tomato Mozzarella"
                     />
-                    <label for="tomato">Tomato Mozzarella</label>
+                    <label for="tomato">Tomato Mozzarella</label> <br />
 
                     <input
                         type="radio"
@@ -68,7 +87,7 @@
                         name="tuesday"
                         value="Greek Salad Wrap"
                     />
-                    <label for="Greek">Greek Salad Wrap</label>
+                    <label for="Greek">Greek Salad Wrap</label> <br />
 
                     <input
                         type="radio"
@@ -87,7 +106,7 @@
                         name="wednesday"
                         value="Red Pepper Hummus"
                     />
-                    <label for="red">Red Pepper Hummus</label>
+                    <label for="red">Red Pepper Hummus</label> <br />
 
                     <input
                         type="radio"
@@ -106,7 +125,7 @@
                         name="thursday"
                         value="Carrot-Ginger Hummus Wrap"
                     />
-                    <label for="carrot">Carrot-Ginger Hummus Wrap</label>
+                    <label for="carrot">Carrot-Ginger Hummus Wrap</label> <br />
 
                     <input
                         type="radio"
@@ -125,7 +144,7 @@
                         name="friday"
                         value="Dado Wrap"
                     />
-                    <label for="dado">Dado Wrap</label>
+                    <label for="dado">Dado Wrap</label> <br />
 
                     <input
                         type="radio"
@@ -147,7 +166,7 @@
                 <div>
                     <h3>Snacks</h3>
                     <input type="radio" id="apple" name="fruit" value="Apple" />
-                    <label for="apple">Apple</label>
+                    <label for="apple">Apple</label> <br />
 
                     <input
                         type="radio"
@@ -155,7 +174,7 @@
                         name="fruit"
                         value="Banana"
                     />
-                    <label for="banana">Banana</label>
+                    <label for="banana">Banana</label> <br />
 
                     <input
                         type="radio"
@@ -172,15 +191,45 @@
 
                 <div>
                     <h3>Drinks</h3>
-                    <label for="black_tea" class="block">Black Tea</label>
-                    <select name="black_tea" id="black_tea">
-                        <option value="0">Hot Black Tea - Keemun</option>
-                        <option value="1">Hot Black Tea - Decaf Keemun</option>
-                        <option value="2">Iced Black Tea - Keemun</option>
-                        <option value="3">Iced Black Tea - Decaf Keemun</option>
+                    <select name="drinks" id="drinks">
+                        <optgroup label="Black Tea">
+                            <option value="0">Hot Black Tea - Keemun</option>
+                            <option value="1">
+                                Hot Black Tea - Decaf Keemun
+                            </option>
+                            <option value="2">Iced Black Tea - Keemun</option>
+                            <option value="3">
+                                Iced Black Tea - Decaf Keemun
+                            </option>
+                        </optgroup>
+
+                        <optgroup label="Green Tea">
+                            <option value="4">Hot Green Tea - Sencha</option>
+                            <option value="5">Hot Green Tea - Decaf</option>
+                            <option value="6">Iced Coffee</option>
+                            <option value="7">Iced Decaf Coffee</option>
+                        </optgroup>
+
+                        <optgroup label="Coffee">
+                            <option value="8">Hot Coffee</option>
+                            <option value="9">Hot Decaf Coffee</option>
+                            <option value="10">Iced Coffee</option>
+                            <option value="11">Iced Decaf Coffee</option>
+                        </optgroup>
+
+                        <optgroup label="Bubble Tea ($1.50 extra)">
+                            <option value="12">Bubble Tea</option>
+                        </optgroup>
                     </select>
+
+                    <hr />
+
+                    <input type="checkbox" name="Ldrink" id="Ldrink" />
+                    <label for="Ldrink">Large drink (75¢ extra)</label>
                 </div>
             </fieldset>
+
+            <input type="submit" value="Place Order" class="mg-b" />
         </form>
     </body>
 </html>
