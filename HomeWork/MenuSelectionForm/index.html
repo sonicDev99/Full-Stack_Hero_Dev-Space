@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .block {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post" target="_blank" autocomplete="on">
+            <h1>Dado Tea Lunch Special</h1>
+            <div>
+                <p>Monday through Friday</p>
+                <p>11am - 3pm</p>
+                <p>$9.95 plus tax</p>
+            </div>
+
+            <p>Includes sandwich, snack, and drink.</p>
+
+            <fieldset>
+                <legend>Order Information</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" />
+                </div>
+
+                <div>
+                    <input type="radio" id="here" name="choice" value="here" />
+                    <label for="here">Here</label>
+
+                    <input type="radio" id="togo" name="choice" value="togo" />
+                    <label for="togo">To Go</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sandwiches</legend>
+
+                <div>
+                    <h3>Monday</h3>
+                    <input
+                        type="radio"
+                        id="tomato"
+                        name="monday"
+                        value="Tomato Mozzarella"
+                    />
+                    <label for="tomato">Tomato Mozzarella</label>
+
+                    <input
+                        type="radio"
+                        id="chicken"
+                        name="monday"
+                        value="Chicken Salad"
+                    />
+                    <label for="chicken">Chicken Salad</label>
+                </div>
+
+                <div>
+                    <h3>Tuesday</h3>
+                    <input
+                        type="radio"
+                        id="Greek"
+                        name="tuesday"
+                        value="Greek Salad Wrap"
+                    />
+                    <label for="Greek">Greek Salad Wrap</label>
+
+                    <input
+                        type="radio"
+                        id="toto"
+                        name="tuesday"
+                        value="Toto Wrap"
+                    />
+                    <label for="toto">Toto Wrap</label>
+                </div>
+
+                <div>
+                    <h3>Wednesday</h3>
+                    <input
+                        type="radio"
+                        id="red"
+                        name="wednesday"
+                        value="Red Pepper Hummus"
+                    />
+                    <label for="red">Red Pepper Hummus</label>
+
+                    <input
+                        type="radio"
+                        id="roasted"
+                        name="wednesday"
+                        value="Roasted Turkey"
+                    />
+                    <label for="roasted"> Roasted Turkey</label>
+                </div>
+
+                <div>
+                    <h3>Thursday</h3>
+                    <input
+                        type="radio"
+                        id="carrot"
+                        name="thursday"
+                        value="Carrot-Ginger Hummus Wrap"
+                    />
+                    <label for="carrot">Carrot-Ginger Hummus Wrap</label>
+
+                    <input
+                        type="radio"
+                        id="egg"
+                        name="thursday"
+                        value="Egg Salad"
+                    />
+                    <label for="egg">Egg Salad</label>
+                </div>
+
+                <div>
+                    <h3>Friday</h3>
+                    <input
+                        type="radio"
+                        id="dado"
+                        name="friday"
+                        value="Dado Wrap"
+                    />
+                    <label for="dado">Dado Wrap</label>
+
+                    <input
+                        type="radio"
+                        id="tuna"
+                        name="friday"
+                        value="Tuna Salad"
+                    />
+                    <label for="tuna">Tuna Salad</label>
+
+                    <hr />
+
+                    <input type="checkbox" name="gluten-free" id="free" />
+                    <label for="free">Gluten Free Bread (75¢ extra)</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Snack</legend>
+                <div>
+                    <h3>Snacks</h3>
+                    <input type="radio" id="apple" name="fruit" value="Apple" />
+                    <label for="apple">Apple</label>
+
+                    <input
+                        type="radio"
+                        id="banana"
+                        name="fruit"
+                        value="Banana"
+                    />
+                    <label for="banana">Banana</label>
+
+                    <input
+                        type="radio"
+                        id="potato"
+                        name="fruit"
+                        value="Potato Chips"
+                    />
+                    <label for="potato">Potato Chips</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Drink</legend>
+
+                <div>
+                    <h3>Drinks</h3>
+                    <label for="black_tea" class="block">Black Tea</label>
+                    <select name="black_tea" id="black_tea">
+                        <option value="0">Hot Black Tea - Keemun</option>
+                        <option value="1">Hot Black Tea - Decaf Keemun</option>
+                        <option value="2">Iced Black Tea - Keemun</option>
+                        <option value="3">Iced Black Tea - Decaf Keemun</option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
